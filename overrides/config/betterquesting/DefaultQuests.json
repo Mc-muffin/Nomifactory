@@ -51221,6 +51221,88 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "833:10": {
+      "preRequisites:11": [
+        148
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Multiblocks feeling cramped? Now that you have §6Titanium§r, you can make §aQuadruple Fluid Hatches§r.\n\nThese hatches hold §e16 buckets each of four different fluids§r. This is convenient for getting multiple fluids into or out of a multiblock when available space is a concern.\n\nLater, you will be able to make §aNonuple Fluid Hatches§r, which hold 16 buckets each of nine different fluids.\n\nNote that the §3Distillation Tower§r does not permit multi-fluid outputs (multi-fluid input works though).",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 706,
+            "OreDict:8": "",
+            "id:8": "gregtech:machine"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Multi-Fluid Hatches",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 833,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:omnicoin5"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 706,
+              "OreDict:8": "",
+              "id:8": "gregtech:machine"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 716,
+              "OreDict:8": "",
+              "id:8": "gregtech:machine"
+            }
+          },
+          "taskID:8": "bq_standard:optional_retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -53237,6 +53319,13 @@
           "sizeY:3": 24,
           "x:3": -276,
           "y:3": 40
+        },
+        "132:10": {
+          "id:3": 833,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -792,
+          "y:3": 72
         }
       }
     },
