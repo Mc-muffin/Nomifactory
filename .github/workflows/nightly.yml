@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - dev
+      - legacy
     tags-ignore:
       - '**'
 
