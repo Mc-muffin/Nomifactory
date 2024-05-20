@@ -113,7 +113,11 @@ async function makeChangelog() {
 	// Push the title.
 	builder.push(`# Changes since ${since}`);
 
-	const comparisonResult = await compareAndExpandManifestDependencies(old, current);
+	const comparisonResult = {
+		removed: [],
+		modified: [],
+		added: [],
+	};
 
 	// Push mod update blocks.
 	[
