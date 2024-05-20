@@ -81,7 +81,7 @@ async function fetchModList() {
 	log("Fetching mod infos...");
 
 	// Fetch project/addon infos.
-	const modInfos = await fetchProjectsBulk(modpackManifest.files.map((mod) => mod.projectID));
+	const modInfos = [];
 
 	log(`Fetched ${modInfos.length} mod infos`);
 
