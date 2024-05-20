@@ -179,7 +179,7 @@ async function downloadMinecraftServer() {
  * Downloads mods according to manifest.json and checks hashes.
  */
 async function downloadMods() {
-	if (modpackManifest.files.length > 0) {
+	if (false) {
 		log(`Fetching ${modpackManifest.files.length} mods...`);
 
 		const modsPath = upath.join(serverDestDirectory, "mods");
