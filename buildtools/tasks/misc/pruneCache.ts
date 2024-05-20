@@ -88,8 +88,8 @@ export default async function pruneCache(): Promise<void> {
 	urls.push(...(await getForgeURLs()).map((url) => url));
 
 	// Fetch file infos.
-	const fileInfos = await Bluebird.map(modpackManifest.files, (file) => fetchFileInfo(file.projectID, file.fileID));
-	urls.push(...fileInfos.map((fileInfo) => fileInfo.downloadUrl));
+	// const fileInfos = await Bluebird.map(modpackManifest.files, (file) => fetchFileInfo(file.projectID, file.fileID));
+	// urls.push(...fileInfos.map((fileInfo) => fileInfo.downloadUrl));
 
 	// Fetch the Minecraft server.
 	const versionManifest: VersionManifest = await getVersionManifest(modpackManifest.minecraft.version);
